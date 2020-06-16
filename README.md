@@ -1,6 +1,8 @@
-# fire_students
-FireBase CloudStore Python integration with Flask Framework
+## fire_students
+#FireBase CloudStore Python integration with Flask Framework
 
-libraries:
+Basic Frontend connected with flask to push data to Firebase CloudStore 
+
+*libraries*:
   Flask
   Firebase-admin
