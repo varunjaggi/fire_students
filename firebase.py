@@ -13,7 +13,7 @@ mykey={
   "type": "service_account",
   "project_id": "firestudents-7dc4f",
   "private_key_id": "960dc37f43069c2c8fd55f9a6e8e98c6285c8578",
-  "private_key": "process.env.FIREBASE_PRIVATE_KEY,
+  "private_key": process.env.FIREBASE_PRIVATE_KEY,
   "client_email": "firebase-adminsdk-qic8w@firestudents-7dc4f.iam.gserviceaccount.com",
   "client_id": "105345324411146928723",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
