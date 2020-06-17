@@ -33,9 +33,10 @@ firebase_admin.initialize_app(cred)
 # });
 
 db = firestore.client()
-doc_ref = db.collection(u'students').document()
+
 
 
 def insert(first,last,age): #function for inserting to DB
+  doc_ref = db.collection(u'students').document(first)
   student = Student(first,last,age)
   doc_ref.set(student.to_dict())
