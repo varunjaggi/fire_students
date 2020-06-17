@@ -18,7 +18,7 @@ firebase_admin.initializeApp({
     "private_key": process.env.FIREBASE_PRIVATE_KEY,
     "client_email": process.env.FIREBASE_CLIENT_EMAIL,
   }),
- databaseURL: "https://firestudents-7dc4f.firebaseio.com/students/PsV5VWTkfXLevhhhsAIx"
+ #databaseURL: "https://firestudents-7dc4f.firebaseio.com/students/PsV5VWTkfXLevhhhsAIx"
 });
 
 db = firestore.client()
