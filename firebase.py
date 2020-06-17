@@ -1,7 +1,6 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-import os
 class Student(object):
     def __init__(self, first, last, born):
         self.first = first
@@ -10,11 +9,12 @@ class Student(object):
 
     def to_dict(self):
         return self.__dict__
+pkey=os.environ['FIREBASE_PRIVATE_KEY']
 mykey={
   "type": "service_account",
   "project_id": "firestudents-7dc4f",
   "private_key_id": "960dc37f43069c2c8fd55f9a6e8e98c6285c8578",
-  "private_key": os.environ[FIREBASE_PRIVATE_KEY],
+  "private_key": pkey ,
   "client_email": "firebase-adminsdk-qic8w@firestudents-7dc4f.iam.gserviceaccount.com",
   "client_id": "105345324411146928723",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
