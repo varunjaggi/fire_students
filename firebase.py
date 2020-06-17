@@ -13,7 +13,7 @@ class Student(object):
 
 # cred = credentials.Certificate("/media/varunjaggi/DriveE/firestudents/firestudents-7dc4f-firebase-adminsdk-qic8w-960dc37f43.json")
 # firebase_admin.initialize_app(cred)
-firebase_admin.initializeApp({
+firebase_admin.initialize_app({
   credential: admin.credential.cert({
     "private_key": process.env.FIREBASE_PRIVATE_KEY,
     "client_email": process.env.FIREBASE_CLIENT_EMAIL,
